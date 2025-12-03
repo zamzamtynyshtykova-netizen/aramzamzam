@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Футбольные клубы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">⚽</div>
+                    <span class="logo-text">Football Clubs</span>
+                </div>
+                <nav class="nav">
+                    <a href="#clubs" class="nav-link">Клубы</a>
+                    <a href="#about" class="nav-link">О проекте</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Футбольные клубы мира</h1>
+                <p class="hero-subtitle">Минималистичный обзор великих команд современного футбола</p>
+                <a href="#clubs" class="hero-cta">Смотреть коллекцию</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">стран</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">клубов</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">трофеев</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clubs Grid -->
+        <section id="clubs" class="clubs-section">
+            <div class="section-header">
+                <h2 class="section-title">Популярные клубы</h2>
+                <p class="section-subtitle">Лучшие команды современного футбола</p>
+            </div>
+            
+            <div class="clubs-grid" id="clubsGrid">
+                <!-- Clubs will be loaded by JavaScript -->
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="europe">Европа</button>
+                <button class="filter-btn" data-filter="england">Англия</button>
+                <button class="filter-btn" data-filter="spain">Испания</button>
+                <button class="filter-btn" data-filter="other">Другие</button>
+            </div>
+        </section>
+
+        <!-- Club Detail Modal -->
+        <div class="modal" id="clubModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section id="about" class="about-section">
+            <div class="about-content">
+                <h2 class="about-title">О проекте</h2>
+                <p class="about-text">
+                    Простой и элегантный способ познакомиться с величайшими футбольными клубами мира. 
+                    Мы собрали информацию о самых значимых командах, их истории и достижениях.
+                </p>
+                <p class="about-text">
+                    Этот проект создан для истинных ценителей минимализма в дизайне и футбола в жизни.
+                </p>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <h3 class="feature-title">Точность</h3>
+                        <p>Актуальные данные и статистика</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">✨</span>
+                        <h3 class="feature-title">Простота</h3>
+                        <p>Чистый и понятный интерфейс</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">📱</span>
+                        <h3 class="feature-title">Адаптивность</h3>
+                        <p>Оптимально на всех устройствах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <div class="logo-icon">⚽</div>
+                        <span class="logo-text">Football Clubs</span>
+                    </div>
+                    <p class="footer-text">
+                        Минималистичный гид по мировому футболу
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">GitHub</a>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Football Clubs. Все права защищены.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
